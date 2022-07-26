@@ -1,3 +1,7 @@
 .page {
 	color: var(--light-text);
 }
+
+.list-text {
+	font-family: var(--list-item-font);
+}

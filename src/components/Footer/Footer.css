@@ -1,6 +1,11 @@
 .footer {
+	display: flex;
 	position: fixed;
+	right: 0;
 	bottom: 0;
-	width: 100%;
 	color: var(--light-text);
+	background: none;
+	font-size: 1rem;
+	padding: unset;
+	font-family: var(--text-font);
 }
