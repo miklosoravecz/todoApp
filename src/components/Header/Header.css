@@ -1,0 +1,4 @@
+.header__text {
+	color: var(--title-text);
+	font-family: var(--title-font);
+}
