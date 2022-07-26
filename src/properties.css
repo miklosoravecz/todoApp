@@ -1,0 +1,10 @@
+:root {
+	background: linear-gradient(
+		115deg,
+		rgba(11, 15, 31, 1) 0%,
+		rgba(13, 16, 47, 1) 100%
+	);
+	/*colors*/
+	--light-font: rgb(240, 255, 255);
+	/*fonts*/
+}
