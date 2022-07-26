@@ -1,4 +1,5 @@
 import React from "react"
+import {Button} from "../Button"
 import {Footer} from "../Footer/index"
 import {Header} from "../Header/index"
 import "./Page.css"
@@ -8,7 +9,7 @@ export const Page = () => {
 		<div className="page">
 			<Header />
 			<main className="main">
-				<h1 className="main__text">Here coming the list</h1>
+				<Button>Add a new todo!</Button>
 			</main>
 			<Footer />
 		</div>
