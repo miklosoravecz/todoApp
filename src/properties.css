@@ -1,10 +1,15 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
 :root {
 	background: linear-gradient(
 		115deg,
 		rgba(11, 15, 31, 1) 0%,
 		rgba(13, 16, 47, 1) 100%
 	);
+
 	/*colors*/
-	--light-font: rgb(240, 255, 255);
+	--light-text: rgb(240, 255, 255);
+	--title-text: #ff5b00;
+
 	/*fonts*/
+	--title-font: "Lobster", cursive;
 }
