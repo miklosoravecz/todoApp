@@ -1,0 +1,16 @@
+.form {
+	font-family: var(--text-font);
+	min-width: 320px;
+	max-width: 480px;
+	margin-bottom: 2rem;
+}
+
+.form-select {
+	font-family: var(--text-font);
+}
+
+.form-buttons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
