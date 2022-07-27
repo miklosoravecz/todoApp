@@ -1,0 +1,16 @@
+.item {
+	color: var(--dark-text);
+	font-family: var(--text-font);
+}
+
+.item-title {
+	font-family: var(--list-item-font);
+	font-size: 2rem;
+	font-weight: bold;
+	color: var(--dark-text);
+}
+
+.item-deadline-text {
+	font-style: italic;
+	color: var(--dark-text);
+}
