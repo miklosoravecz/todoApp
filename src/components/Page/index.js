@@ -10,12 +10,6 @@ export const Page = () => {
 		<div className="page">
 			<Header />
 			<main className="main">
-				<ul>
-					<h4 className="list-text">Going to shop</h4>
-				</ul>
-				<ul>
-					<h4 className="list-text">Cooking soup</h4>
-				</ul>
 				<Button>Add a new todo!</Button>
 				<Modal />
 			</main>
