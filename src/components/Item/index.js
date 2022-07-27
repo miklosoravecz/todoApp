@@ -19,7 +19,7 @@ export const Item = props => {
 	}
 
 	return (
-		<li className="item">
+		<li className="item" id={props.id}>
 			<div className={`item-wrapper notification ${status}`}>
 				<h3 className="item-title">{props.title}</h3>
 				<p className="item-deadline-text">Deadline: {props.deadline}</p>
