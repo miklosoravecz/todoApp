@@ -1,6 +1,7 @@
 .item {
 	color: var(--dark-text);
 	font-family: var(--text-font);
+	margin-bottom: 1rem;
 }
 
 .item-title {
