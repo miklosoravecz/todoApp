@@ -1,7 +1,18 @@
 .page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 	color: var(--light-text);
 }
 
-.list-text {
-	font-family: var(--list-item-font);
+.page-main {
+	display: flex;
+	flex-direction: column;
+	margin: 2rem 0 2rem 0;
+}
+
+.page-add-btn {
+	min-width: 320px;
+	max-width: 480px;
+	margin-bottom: 2rem;
 }
