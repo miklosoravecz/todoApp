@@ -1,8 +1,4 @@
 .footer {
-	display: flex;
-	position: fixed;
-	right: 0;
-	bottom: 0;
 	color: var(--light-text);
 	background: none;
 	font-size: 1rem;

@@ -3,8 +3,8 @@ import "./Footer.css"
 
 export const Footer = () => {
 	return (
-		<div className="footer">
+		<footer className="footer">
 			<h2>Miklós Oravecz 2022 &copy;</h2>
-		</div>
+		</footer>
 	)
 }
