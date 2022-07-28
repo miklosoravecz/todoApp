@@ -20,4 +20,14 @@ You may also see any lint errors in the console.
 -Create, Edit, Delete todos
 
 ### Screenshots
+Main page
 ![Alt text](https://github.com/miklosoravecz/todoApp/blob/main/src/screenshots/1.jpg "Main page")
+
+Add a new todo
+![Alt text](https://github.com/miklosoravecz/todoApp/blob/main/src/screenshots/2.jpg) "Add todo")
+
+List of todos
+![Alt text](https://github.com/miklosoravecz/todoApp/blob/main/src/screenshots/3.jpg) "List")
+
+Edit todo
+![Alt text](https://github.com/miklosoravecz/todoApp/blob/main/src/screenshots/4.jpg) "List")
