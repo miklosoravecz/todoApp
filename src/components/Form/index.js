@@ -15,6 +15,7 @@ export const Form = props => {
 		setDeadline("Deadline")
 		setStatus("Not started")
 		setValue("default")
+		props.setModalState()
 	}
 
 	const handleTitleChange = e => {

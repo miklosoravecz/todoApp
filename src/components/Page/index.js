@@ -60,6 +60,10 @@ export const Page = () => {
 		setList(remainingItems)
 	}
 
+	const setModalState = () => {
+		setIsModalOpen(false)
+	}
+
 	return (
 		<div className="page">
 			<Header />
@@ -74,10 +78,11 @@ export const Page = () => {
 							addItem={addItem}
 							validationError={validationError}
 							handleCancel={handleCancel}
+							setModalState={setModalState}
 						/>
-						<List list={list} deleteItem={deleteItem} editItem={editItem} />
 					</>
 				)}
+				<List list={list} deleteItem={deleteItem} editItem={editItem} />
 				<Info />
 			</main>
 
