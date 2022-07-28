@@ -7,6 +7,26 @@ import {Modal} from "../Modal"
 import "./Page.css"
 
 export const Page = () => {
+	const DATA = [
+		{
+			id: "todo-0",
+			title: "new title",
+			deadline: "after tomorrow",
+			status: "Done"
+		},
+		{
+			id: "todo-1",
+			title: "new title2",
+			deadline: "tomorrow",
+			status: "In progress"
+		},
+		{
+			id: "todo-2",
+			title: "new title3",
+			deadline: "3 days later",
+			status: "Not started"
+		}
+	]
 	return (
 		<div className="page">
 			<Header />
@@ -14,7 +34,7 @@ export const Page = () => {
 				<Button cls="page-add-btn">Add a new todo!</Button>
 
 				<Modal />
-				<List />
+				<List listItems={DATA} />
 			</main>
 			<Footer />
 		</div>
