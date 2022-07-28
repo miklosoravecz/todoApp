@@ -17,8 +17,8 @@ https://miklos-oravecz-todoapp.netlify.app/
 
 ### The project contains
 
--HTML, Css, Bulma framework, Javascript, EsLint
--Create, Edit, Delete todos
+- HTML, Css, Bulma framework, Javascript, EsLint
+- Create, Edit, Delete todos
 
 ### Screenshots
 Main page
