@@ -32,22 +32,25 @@ export const Form = props => {
 
 	return (
 		<form className="form">
+			<h3>Add a title</h3>
 			<input
 				type="text"
 				id="title"
-				className="input"
+				className="input form-input"
 				name="Title"
 				value={title}
 				onChange={handleTitleChange}
 			/>
+			<h3>Add deadline</h3>
 			<input
 				type="text"
 				id="deadline"
-				className="input"
+				className="input form-input"
 				name="Deadline"
 				value={deadline}
 				onChange={handleDeadlineChange}
 			/>
+			<h3>Select status</h3>
 			<div className="form-buttons">
 				<select
 					className="form-select"

@@ -34,22 +34,25 @@ export const FormEdit = props => {
 
 	return (
 		<form className="form-edit">
+			<h3>Edit title</h3>
 			<input
 				type="text"
 				id="title"
-				className="input"
+				className="input form-edit-input"
 				name="Title"
 				value={title}
 				onChange={handleTitleChange}
 			/>
+			<h3>Edit deadline</h3>
 			<input
 				type="text"
 				id="deadline"
-				className="input"
+				className="input form-edit-input"
 				name="Deadline"
 				value={deadline}
 				onChange={handleDeadlineChange}
 			/>
+			<h3>Select status</h3>
 			<div className="form-edit-buttons">
 				<select
 					className="form-edit-select"

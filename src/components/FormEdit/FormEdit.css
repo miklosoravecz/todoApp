@@ -5,6 +5,10 @@
 	margin-bottom: 2rem;
 }
 
+.form-edit-input {
+	margin-bottom: 1rem;
+}
+
 .form-edit-select {
 	font-family: var(--text-font);
 }
