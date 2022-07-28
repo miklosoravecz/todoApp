@@ -1,9 +1,13 @@
+.info-container {
+	margin-bottom: 4rem;
+}
 .info-title {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 	margin-bottom: 1rem;
 	font-size: larger;
+	margin-top: 2rem;
 }
 .info {
 	display: flex;

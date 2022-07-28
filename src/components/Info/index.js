@@ -3,7 +3,7 @@ import "./Info.css"
 
 export const Info = ({children, cls, type, func}) => {
 	return (
-		<>
+		<div className="info-container">
 			<div>
 				<h2 className="info-title">Status info</h2>
 			</div>
@@ -12,6 +12,6 @@ export const Info = ({children, cls, type, func}) => {
 				<div className="info-not-started">Not started</div>
 				<div className="info-in-progress">In progress</div>
 			</div>
-		</>
+		</div>
 	)
 }
