@@ -1,5 +1,6 @@
 import React from "react"
 import {Form} from "../Form"
+import {ValidationError} from "../ValidationError"
 import "./Modal.css"
 
 export const Modal = props => {
@@ -7,6 +8,7 @@ export const Modal = props => {
 		<div className="modal-wrapper">
 			<h2 className="form-title">Add a new todo to the list</h2>
 			<Form addItem={props.addItem} />
+			<ValidationError validationError={props.validationError} />
 		</div>
 	)
 }
