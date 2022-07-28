@@ -6,13 +6,15 @@ export const Form = props => {
 	const [title, setTitle] = useState("Title")
 	const [deadline, setDeadline] = useState("Deadline")
 	const [status, setStatus] = useState("Not started")
+	const [value, setValue] = useState("default")
 
 	const handleSubmit = e => {
 		e.preventDefault()
 		props.addItem(title, deadline, status)
 		setTitle("Title")
 		setDeadline("Deadline")
-		setStatus("Status")
+		setStatus("Not started")
+		setValue("default")
 	}
 
 	const handleTitleChange = e => {
@@ -25,6 +27,7 @@ export const Form = props => {
 
 	const handleStatusChange = e => {
 		setStatus(e.target.value)
+		setValue(e.target.value)
 	}
 
 	return (
@@ -51,8 +54,9 @@ export const Form = props => {
 					name="Status"
 					id="status"
 					onChange={handleStatusChange}
+					value={value}
 				>
-					<option value="" disabled selected>
+					<option value="default" disabled selected>
 						Status
 					</option>
 					<option value="In progress">In progress</option>
