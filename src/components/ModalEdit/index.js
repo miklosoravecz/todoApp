@@ -12,6 +12,8 @@ export const ModalEdit = props => {
 				title={props.title}
 				deadline={props.deadline}
 				editItem={props.editItem}
+				handleDelete={props.handleDelete}
+				handleCancel={props.handleCancel}
 			/>
 			<ValidationError validationError={props.validationError} />
 		</div>

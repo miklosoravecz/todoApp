@@ -1,19 +1,15 @@
-.item-container {
-	background: none;
-	width: 100%;
-}
-
-.item {
-	color: var(--dark-text);
-	font-family: var(--text-font);
-	margin-bottom: 1rem;
-}
-
-.item-wrapper {
+.item-button {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
+	justify-content: center;
+	background: none;
+	border: none;
+	cursor: pointer;
+	min-width: 320px;
+	max-width: 480px;
+	font-family: var(--text-font);
+	color: var(--dark-text);
+	padding: 0;
 }
 
 .item-title {
@@ -21,6 +17,13 @@
 	font-size: 2rem;
 	font-weight: bold;
 	color: var(--dark-text);
+}
+
+.item-delete-button {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
 .item-deadline-text {

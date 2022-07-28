@@ -10,13 +10,11 @@ export const FormEdit = props => {
 
 	const handleSubmit = e => {
 		e.preventDefault()
-
 		props.editItem(props.id, title, deadline, status)
 		setTitle("Title")
 		setDeadline("Deadline")
 		setStatus("Not started")
 		setValue("default")
-		console.log("clicked in edit item")
 	}
 
 	const handleTitleChange = e => {
@@ -73,12 +71,14 @@ export const FormEdit = props => {
 					<option value="Done">Done</option>
 				</select>
 				<div className="button-wrapper">
-					<Button type="submit" className="button">
+					<Button type="submit" className="button" func={props.handleCancel}>
 						Cancel
 					</Button>
 					<Button type="submit" className="button" func={handleSubmit}>
-						Add
+						Edit
 					</Button>
+
+					<Button func={props.handleDelete}>Delete</Button>
 				</div>
 			</div>
 		</form>
