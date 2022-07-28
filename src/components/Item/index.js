@@ -10,11 +10,11 @@ export const Item = props => {
 
 	const statusSelector = () => {
 		if (props.status === "Done") {
-			setStatus("is-success is-light")
+			setStatus("is-success")
 		} else if (props.status === "In progress") {
-			setStatus("is-warning is-light")
+			setStatus("is-warning")
 		} else {
-			setStatus("is-danger is-light")
+			setStatus("is-danger")
 		}
 	}
 
