@@ -1,4 +1,5 @@
 import React, {useState} from "react"
+import {Button} from "../Button"
 import "./Form.css"
 
 export const Form = props => {
@@ -59,12 +60,12 @@ export const Form = props => {
 					<option value="Done">Done</option>
 				</select>
 				<div className="button-wrapper">
-					<button type="submit" className="button">
+					<Button type="submit" className="button">
 						Cancel
-					</button>
-					<button type="submit" className="button" onClick={handleSubmit}>
+					</Button>
+					<Button type="submit" className="button" func={handleSubmit}>
 						Add
-					</button>
+					</Button>
 				</div>
 			</div>
 		</form>
