@@ -30,4 +30,4 @@ List of todos
 ![Alt text](https://github.com/miklosoravecz/todoApp/blob/main/src/screenshots/3.jpg) "List")
 
 Edit todo
-![Alt text](https://github.com/miklosoravecz/todoApp/blob/main/src/screenshots/4.jpg) "List")
+![Alt text](https://github.com/miklosoravecz/todoApp/blob/main/src/screenshots/4.jpg) "Edit")
