@@ -1,3 +1,8 @@
+.item-container {
+	background: none;
+	width: 100%;
+}
+
 .item {
 	color: var(--dark-text);
 	font-family: var(--text-font);
