@@ -3,6 +3,7 @@
 	flex-direction: column;
 	align-items: center;
 	color: var(--light-text);
+	margin-top: 5%;
 }
 
 .page-main {
