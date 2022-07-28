@@ -11,6 +11,18 @@ import {v4 as uuidv4} from "uuid"
 export const Page = () => {
 	const [list, setList] = useState([])
 	const [validationError, setValidationError] = useState(null)
+	const [isModalOpen, setIsModalOpen] = useState(false)
+
+	const handleOnClick = e => {
+		e.preventDefault()
+		setIsModalOpen(true)
+	}
+
+	const handleCancel = e => {
+		e.preventDefault()
+		e.stopPropagation()
+		setIsModalOpen(false)
+	}
 
 	const addItem = (title, deadline, status) => {
 		if (title.length === 0 || deadline.length === 0) {
@@ -51,12 +63,24 @@ export const Page = () => {
 	return (
 		<div className="page">
 			<Header />
+
 			<main className="page-main">
-				<Button cls="page-add-btn">Add a new todo!</Button>
-				<Modal addItem={addItem} validationError={validationError} />
-				<List list={list} deleteItem={deleteItem} editItem={editItem} />
+				<Button func={handleOnClick} cls="page-add-btn">
+					Add a new todo!
+				</Button>
+				{isModalOpen && (
+					<>
+						<Modal
+							addItem={addItem}
+							validationError={validationError}
+							handleCancel={handleCancel}
+						/>
+						<List list={list} deleteItem={deleteItem} editItem={editItem} />
+					</>
+				)}
 				<Info />
 			</main>
+
 			<Footer />
 		</div>
 	)

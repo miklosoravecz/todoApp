@@ -67,7 +67,7 @@ export const Form = props => {
 					<option value="Done">Done</option>
 				</select>
 				<div className="button-wrapper">
-					<Button type="submit" className="button">
+					<Button type="submit" className="button" func={props.handleCancel}>
 						Cancel
 					</Button>
 					<Button type="submit" className="button" func={handleSubmit}>
