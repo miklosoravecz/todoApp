@@ -10,6 +10,7 @@ export const List = props => {
 			title={item.title}
 			status={item.status}
 			deadline={item.deadline}
+			deleteItem={props.deleteItem}
 		/>
 	))
 	return (

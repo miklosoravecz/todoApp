@@ -4,6 +4,13 @@
 	margin-bottom: 1rem;
 }
 
+.item-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+
 .item-title {
 	font-family: var(--list-item-font);
 	font-size: 2rem;

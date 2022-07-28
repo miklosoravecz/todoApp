@@ -27,13 +27,18 @@ export const Page = () => {
 		setValidationError(null)
 	}
 
+	function deleteItem(id) {
+		const remainingTasks = list.filter(item => id !== item.id)
+		setList(remainingTasks)
+	}
+
 	return (
 		<div className="page">
 			<Header />
 			<main className="page-main">
 				<Button cls="page-add-btn">Add a new todo!</Button>
 				<Modal addItem={addItem} validationError={validationError} />
-				<List list={list} />
+				<List list={list} deleteItem={deleteItem} />
 			</main>
 			<Footer />
 		</div>
