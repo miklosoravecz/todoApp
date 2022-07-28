@@ -67,7 +67,6 @@ export const Page = () => {
 	return (
 		<div className="page">
 			<Header />
-
 			<main className="page-main">
 				<Button func={handleOnClick} cls="page-add-btn">
 					Add a new todo!
@@ -85,7 +84,6 @@ export const Page = () => {
 				<List list={list} deleteItem={deleteItem} editItem={editItem} />
 				<Info />
 			</main>
-
 			<Footer />
 		</div>
 	)

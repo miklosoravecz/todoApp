@@ -48,7 +48,6 @@ export const Item = props => {
 				<div>
 					<h3 className="item-title">{props.title}</h3>
 					<p className="item-deadline-text">Deadline: {props.deadline}</p>
-					<p>Status: {props.status}</p>
 				</div>
 			</button>
 			{isModalOpen && (
