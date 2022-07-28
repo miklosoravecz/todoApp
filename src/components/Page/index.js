@@ -27,9 +27,24 @@ export const Page = () => {
 		setValidationError(null)
 	}
 
-	function deleteItem(id) {
-		const remainingTasks = list.filter(item => id !== item.id)
-		setList(remainingTasks)
+	const editItem = (id, newTitle, newDeadline, newStatus) => {
+		const editedItem = list.map(item => {
+			if (item.id === id) {
+				return {
+					...item,
+					title: newTitle,
+					deadline: newDeadline,
+					status: newStatus
+				}
+			}
+			return item
+		})
+		setList(editedItem)
+	}
+
+	const deleteItem = id => {
+		const remainingItems = list.filter(item => id !== item.id)
+		setList(remainingItems)
 	}
 
 	return (
@@ -38,7 +53,7 @@ export const Page = () => {
 			<main className="page-main">
 				<Button cls="page-add-btn">Add a new todo!</Button>
 				<Modal addItem={addItem} validationError={validationError} />
-				<List list={list} deleteItem={deleteItem} />
+				<List list={list} deleteItem={deleteItem} editItem={editItem} />
 			</main>
 			<Footer />
 		</div>
