@@ -6,7 +6,7 @@ export const Form = props => {
 	const [deadline, setDeadline] = useState("Deadline")
 	const [status, setStatus] = useState("Not started")
 
-	function handleSubmit(e) {
+	const handleSubmit = e => {
 		e.preventDefault()
 		props.addItem(title, deadline, status)
 		setTitle("Title")
@@ -14,15 +14,15 @@ export const Form = props => {
 		setStatus("Status")
 	}
 
-	function handleTitleChange(e) {
+	const handleTitleChange = e => {
 		setTitle(e.target.value)
 	}
 
-	function handleDeadlineChange(e) {
+	const handleDeadlineChange = e => {
 		setDeadline(e.target.value)
 	}
 
-	function handleStatusChange(e) {
+	const handleStatusChange = e => {
 		setStatus(e.target.value)
 	}
 

@@ -35,7 +35,7 @@ export const Page = () => {
 	]
 	const [list, setList] = useState(listItems)
 
-	function addItem(title, deadline, status) {
+	const addItem = (title, deadline, status) => {
 		const newItem = {id: "id", title: title, deadline: deadline, status: status}
 		setList([...listItems, newItem])
 		console.log(newItem)
@@ -46,7 +46,6 @@ export const Page = () => {
 			<Header />
 			<main className="page-main">
 				<Button cls="page-add-btn">Add a new todo!</Button>
-
 				<Modal addItem={addItem} />
 				<List list={list} />
 			</main>
