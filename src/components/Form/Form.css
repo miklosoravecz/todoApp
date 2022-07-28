@@ -3,6 +3,9 @@
 	min-width: 320px;
 	max-width: 480px;
 	margin-bottom: 2rem;
+	background-color: var(--form-bg-color);
+	padding: 1rem;
+	border-radius: 4px;
 }
 
 .form-input {
