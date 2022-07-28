@@ -20,3 +20,4 @@ You may also see any lint errors in the console.
 -Create, Edit, Delete todos
 
 ### Screenshots
+![Alt text](https://github.com/miklosoravecz/todoApp/blob/main/src/screenshots/1.jpg "Main page")
