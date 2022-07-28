@@ -38,6 +38,10 @@ export const Item = props => {
 		setIsModalOpen(false)
 	}
 
+	const setModalClosed = () => {
+		setIsModalOpen(false)
+	}
+
 	return (
 		<>
 			<button
@@ -59,6 +63,7 @@ export const Item = props => {
 					isModalOpen={isModalOpen}
 					handleDelete={handleDelete}
 					handleCancel={handleCancel}
+					setModalClosed={setModalClosed}
 				/>
 			)}
 		</>

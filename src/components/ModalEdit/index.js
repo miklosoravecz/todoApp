@@ -14,6 +14,7 @@ export const ModalEdit = props => {
 				editItem={props.editItem}
 				handleDelete={props.handleDelete}
 				handleCancel={props.handleCancel}
+				setModalClosed={props.setModalClosed}
 			/>
 			<ValidationError validationError={props.validationError} />
 		</div>

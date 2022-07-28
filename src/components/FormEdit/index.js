@@ -15,6 +15,7 @@ export const FormEdit = props => {
 		setDeadline("Deadline")
 		setStatus("Not started")
 		setValue("default")
+		props.setModalClosed()
 	}
 
 	const handleTitleChange = e => {
