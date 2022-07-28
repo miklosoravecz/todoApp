@@ -12,6 +12,8 @@
 	--dark-text: rgb(20, 20, 20);
 	--title-text: #ff5b00;
 	--error: rgb(241, 70, 104);
+	--green: rgb(72, 199, 142);
+	--yellow: rgb(255, 224, 138);
 
 	/*fonts*/
 	--title-font: "Lobster", cursive;

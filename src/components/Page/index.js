@@ -4,6 +4,7 @@ import {Footer} from "../Footer/index"
 import {Header} from "../Header/index"
 import {List} from "../List"
 import {Modal} from "../Modal"
+import {Info} from "../Info"
 import "./Page.css"
 import {v4 as uuidv4} from "uuid"
 
@@ -54,6 +55,7 @@ export const Page = () => {
 				<Button cls="page-add-btn">Add a new todo!</Button>
 				<Modal addItem={addItem} validationError={validationError} />
 				<List list={list} deleteItem={deleteItem} editItem={editItem} />
+				<Info />
 			</main>
 			<Footer />
 		</div>

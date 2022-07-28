@@ -1,0 +1,37 @@
+.info-title {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-bottom: 1rem;
+	font-size: larger;
+}
+.info {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	min-width: 320px;
+	max-width: 480px;
+	font-family: var(--text-font);
+}
+
+.info-done {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-basis: 30%;
+	background-color: var(--green);
+}
+.info-not-started {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-basis: 30%;
+	background-color: var(--error);
+}
+.info-in-progress {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-basis: 30%;
+	background-color: var(--yellow);
+}
