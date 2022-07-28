@@ -7,7 +7,12 @@ export const ModalEdit = props => {
 	return (
 		<div className="modal-edit-wrapper">
 			<h2 className="form-title">Edit list item</h2>
-			<FormEdit id={props.id} editItem={props.editItem} />
+			<FormEdit
+				id={props.id}
+				title={props.title}
+				deadline={props.deadline}
+				editItem={props.editItem}
+			/>
 			<ValidationError validationError={props.validationError} />
 		</div>
 	)

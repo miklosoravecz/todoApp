@@ -34,7 +34,9 @@ export const FormEdit = props => {
 
 	return (
 		<form className="form-edit">
-			<h3>Edit title</h3>
+			<h3>
+				Edit title: <b>{props.title}</b>
+			</h3>
 			<input
 				type="text"
 				id="title"
@@ -43,7 +45,9 @@ export const FormEdit = props => {
 				value={title}
 				onChange={handleTitleChange}
 			/>
-			<h3>Edit deadline</h3>
+			<h3>
+				Edit deadline: <b>{props.deadline}</b>
+			</h3>
 			<input
 				type="text"
 				id="deadline"

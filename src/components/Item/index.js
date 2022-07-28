@@ -47,7 +47,12 @@ export const Item = props => {
 					</div>
 				</div>
 			</li>
-			<ModalEdit id={props.id} editItem={props.editItem} />
+			<ModalEdit
+				id={props.id}
+				title={props.title}
+				deadline={props.deadline}
+				editItem={props.editItem}
+			/>
 		</>
 	)
 }
