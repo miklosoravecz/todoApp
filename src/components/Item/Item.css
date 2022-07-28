@@ -10,6 +10,8 @@
 	font-family: var(--text-font);
 	color: var(--dark-text);
 	padding: 0;
+	animation-duration: 1s;
+	animation-name: slidein;
 }
 
 .item-title {
@@ -29,4 +31,16 @@
 .item-deadline-text {
 	font-style: italic;
 	color: var(--dark-text);
+}
+
+@keyframes slidein {
+	from {
+		margin-left: 200%;
+		width: 300%;
+	}
+
+	to {
+		margin-left: 0%;
+		width: 100%;
+	}
 }

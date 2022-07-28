@@ -2,3 +2,20 @@
 	font-family: var(--text-font);
 	font-size: larger;
 }
+
+.modal-wrapper {
+	animation-duration: 1s;
+	animation-name: slidein;
+}
+
+@keyframes slidein {
+	from {
+		margin-left: 200%;
+		width: 300%;
+	}
+
+	to {
+		margin-left: 0%;
+		width: 100%;
+	}
+}
