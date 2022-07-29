@@ -7,6 +7,7 @@ import {Modal} from "../Modal"
 import {Info} from "../Info"
 import "./Page.css"
 import {v4 as uuidv4} from "uuid"
+import {ValidationError} from "../ValidationError"
 
 export const Page = () => {
 	const [list, setList] = useState([])
@@ -16,6 +17,7 @@ export const Page = () => {
 	const handleOnClick = e => {
 		e.preventDefault()
 		setIsModalOpen(true)
+		setValidationError(null)
 	}
 
 	const handleCancel = e => {
@@ -25,7 +27,7 @@ export const Page = () => {
 	}
 
 	const addItem = (title, deadline, status) => {
-		if (title.length === 0 || deadline.length === 0) {
+		if (!title || !deadline) {
 			setValidationError("Title and deadline must be filled!")
 			return
 		}
@@ -75,12 +77,12 @@ export const Page = () => {
 					<>
 						<Modal
 							addItem={addItem}
-							validationError={validationError}
 							handleCancel={handleCancel}
 							setModalState={setModalState}
 						/>
 					</>
 				)}
+				<ValidationError validationError={validationError} />
 				<List list={list} deleteItem={deleteItem} editItem={editItem} />
 				<Info />
 			</main>

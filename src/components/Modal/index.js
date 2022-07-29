@@ -1,6 +1,5 @@
 import React from "react"
 import {Form} from "../Form"
-import {ValidationError} from "../ValidationError"
 import "./Modal.css"
 
 export const Modal = props => {
@@ -12,7 +11,6 @@ export const Modal = props => {
 				handleCancel={props.handleCancel}
 				setModalState={props.setModalState}
 			/>
-			<ValidationError validationError={props.validationError} />
 		</div>
 	)
 }
